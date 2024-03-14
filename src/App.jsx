@@ -29,7 +29,7 @@ export default function App() {
         const fetchUser = async () => {
             try {
                 const res = await axios.get(
-                    "http://localhost:5000/api/v1/user/getuser",
+                    "https://fec-backend-28yr.onrender.com/api/v1/user/getuser",
                     {
                         withCredentials: true,
                     }

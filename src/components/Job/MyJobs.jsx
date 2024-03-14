@@ -16,7 +16,7 @@ const MyJobs = () => {
         const fetchArticles = async () => {
             try {
                 const { data } = await axios.get(
-                    "http://localhost:5000/api/v2/artical/articleMy",
+                    "https://fec-backend-28yr.onrender.com/api/v2/artical/articleMy",
                     { withCredentials: true }
                 );
                 setArticles(data.article);
@@ -39,7 +39,7 @@ const MyJobs = () => {
     const handleUpdateArticle = async (_articleId, updatedData) => {
         try {
             await axios.put(
-                `http://localhost:5000/api/v2/artical/artical-update/${_articleId}`,
+                `https://fec-backend-28yr.onrender.com/api/v2/artical/artical-update/${_articleId}`,
                 updatedData,
                 { withCredentials: true }
             );
@@ -53,7 +53,7 @@ const MyJobs = () => {
     const handleDeleteArticle = async (_articleId) => {
         try {
             await axios.delete(
-                `http://localhost:5000/api/v2/artical/artical-delete/${_articleId}`,
+                `https://fec-backend-28yr.onrender.com/api/v2/artical/artical-delete/${_articleId}`,
                 { withCredentials: true }
             );
             createToast("Article deleted successfully", "success");

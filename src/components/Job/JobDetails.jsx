@@ -13,7 +13,7 @@ const JobDetails = () => {
   useEffect(() => {
     const fetchArtical = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/v2/artical/${id}`, {
+        const response = await axios.get(`https://fec-backend-28yr.onrender.com/api/v2/artical/${id}`, {
           withCredentials: true,
         });
         setArtical(response.data.Artical);

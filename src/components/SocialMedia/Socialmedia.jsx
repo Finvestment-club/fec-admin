@@ -10,7 +10,7 @@ const Socialmedia = () => {
   useEffect(() => {
     try {
       axios
-        .get("http://localhost:5000/api/v3/socialmedia/social-get", {
+        .get("https://fec-backend-28yr.onrender.com/api/v3/socialmedia/social-get", {
           withCredentials: true,
         })
         .then((res) => {

@@ -13,7 +13,7 @@ const SocialDetails = () => {
   useEffect(() => {
     const fetchArtical = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/v3/socialmedia/${id}`, {
+        const response = await axios.get(`https://fec-backend-28yr.onrender.com/api/v3/socialmedia/${id}`, {
           withCredentials: true,
         });
         setSocial(response.data.Social);

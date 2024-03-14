@@ -19,7 +19,7 @@ const PostJob = () => {
     //     e.preventDefault();
     //     await axios
     //         .post(
-    //             "http://localhost:5000/api/v2/artical/artical-post",
+    //             "https://fec-backend-28yr.onrender.com/api/v2/artical/artical-post",
 
     //             title,
     //             description,
@@ -56,7 +56,7 @@ const PostJob = () => {
           };
   
           await axios.post(
-              "http://localhost:5000/api/v2/artical/artical-post",
+              "https://fec-backend-28yr.onrender.com/api/v2/artical/artical-post",
               postData,
               {
                   withCredentials: true,

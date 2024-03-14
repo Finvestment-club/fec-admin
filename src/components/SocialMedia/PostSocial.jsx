@@ -25,7 +25,7 @@ const PostSocial = () => {
 
     //         await axios
     //             .post(
-    //                 "http://localhost:5000/api/v3/socialmedia/social-post",
+    //                 "https://fec-backend-28yr.onrender.com/api/v3/socialmedia/social-post",
     //                 postData,
     //                 {
     //                     withCredentials: true,
@@ -64,7 +64,7 @@ const PostSocial = () => {
             formData.append("images", images); // Append file
     
             const response = await axios.post(
-                "http://localhost:5000/api/v3/socialmedia/social-post",
+                "https://fec-backend-28yr.onrender.com/api/v3/socialmedia/social-post",
                 formData,
                 {
                     withCredentials: true,

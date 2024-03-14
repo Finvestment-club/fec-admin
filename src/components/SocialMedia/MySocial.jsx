@@ -19,7 +19,7 @@ const MySocial = () => {
         const fetchArticles = async () => {
             try {
                 const { data } = await axios.get(
-                    "http://localhost:5000/api/v3/socialmedia/my-social",
+                    "https://fec-backend-28yr.onrender.com/api/v3/socialmedia/my-social",
                     { withCredentials: true }
                 );
                 setSocial(data.Social);
@@ -45,7 +45,7 @@ const MySocial = () => {
     const handleUpdateArticle = async (_socialId, updatedData) => {
         try {
             await axios.put(
-                `http://localhost:5000/api/v3/socialmedia/social-update/${_socialId}`,
+                `https://fec-backend-28yr.onrender.com/api/v3/socialmedia/social-update/${_socialId}`,
                 updatedData,
                 { withCredentials: true }
             );
@@ -62,7 +62,7 @@ const MySocial = () => {
     const handleDeleteArticle = async (_socialId) => {
         try {
             await axios.delete(
-                `http://localhost:5000/api/v3/socialmedia/social-delete/${_socialId}`,
+                `https://fec-backend-28yr.onrender.com/api/v3/socialmedia/social-delete/${_socialId}`,
                 { withCredentials: true }
             );
             createToast("Article deleted successfully", "success");
