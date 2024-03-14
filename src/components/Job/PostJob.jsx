@@ -121,7 +121,7 @@ const PostJob = () => {
                             onChange={(e) => setDescription(e.target.value)}
                             placeholder="Job Description"
                         />
-                        <button type="submit">Create Job</button>
+                        <button type="submit">Create Artical</button>
                     </form>
                 </div>
             </div>

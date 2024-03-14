@@ -33,7 +33,7 @@ const Navbar = () => {
         <nav className={isAuthorized ? "navbarShow" : "navbarHide"}>
             <div className="container">
                 <div className="logo">
-                    <img src="./images/logo.png" alt="logos" />
+                    <img src="./images/logo.png" alt="logo" />
                 </div>
                 <ul className={!show ? "menu" : "show-menu menu"}>
                     {/* <li>
@@ -56,70 +56,105 @@ const Navbar = () => {
                             VIEW YOUR Article
                         </Link>
                     </li> */}
+                    <div className="mmm">
+                        <li>
+                            <Link to={"/"} onClick={() => setShow(false)}>
+                                HOME
+                            </Link>
+                        </li>
+                    </div>
                     <div className="aaaa">
-
-
-                    <li className="dropbtn">
-                        article
-                        <div class="dropdown-content">
-                        <li><Link to={"/job/getall"} onClick={() => setShow(false)}>
-                            ALL Article
-                        </Link></li>
-                            <li >
-                            <Link to={"/job/post"} onClick={() => setShow(false)}>
-                            POST NEW Article
-                        </Link>
-                            </li>
-                            <li>
-                            <Link to={"/job/me"} onClick={() => setShow(false)}>
-                            VIEW YOUR Article
-                        </Link>
-                            </li>
-                        </div>
-                    </li>
+                        <li className="dropbtn">
+                            article
+                            <div class="dropdown-content">
+                                <li>
+                                    <Link
+                                        to={"/job/getall"}
+                                        onClick={() => setShow(false)}
+                                    >
+                                        ALL Article
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to={"/job/post"}
+                                        onClick={() => setShow(false)}
+                                    >
+                                        POST NEW Article
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to={"/job/me"}
+                                        onClick={() => setShow(false)}
+                                    >
+                                        VIEW YOUR Article
+                                    </Link>
+                                </li>
+                            </div>
+                        </li>
                     </div>
                     <div className="dddd">
-
-                    <li className="dropbtn-2">
-                        Social Media post
-                        <div class="dropdown-content-2">
-                        <li><Link to={"/Social/getall"} onClick={() => setShow(false)}>
-                            ALL Social Media post
-                        </Link></li>
-                            <li >
-                            <Link to={"/Social/post"} onClick={() => setShow(false)}>
-                            POST NEW Social Media post
-                        </Link>
-                            </li>
-                            <li>
-                            <Link to={"/Social/me"} onClick={() => setShow(false)}>
-                            VIEW YOUR Social Media post
-                        </Link>
-                            </li>
-                        </div>
-                    </li>
+                        <li className="dropbtn-2">
+                            Social Media post
+                            <div class="dropdown-content-2">
+                                <li>
+                                    <Link
+                                        to={"/Socialmedia/getall"}
+                                        onClick={() => setShow(false)}
+                                    >
+                                        ALL Social Media post
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to={"/Socialmedia/post"}
+                                        onClick={() => setShow(false)}
+                                    >
+                                        POST NEW Social Media post
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to={"/Socialmedia/me"}
+                                        onClick={() => setShow(false)}
+                                    >
+                                        VIEW YOUR Social Media post
+                                    </Link>
+                                </li>
+                            </div>
+                        </li>
                     </div>
                     <div className="nnnn">
-
-
-                    <li className="dropbtn-3">
-                        News
-                        <div class="dropdown-content-3">
-                        <li><Link to={"/News/getall"} onClick={() => setShow(false)}>
-                            ALL News
-                        </Link></li>
-                            <li >
-                            <Link to={"/News/post"} onClick={() => setShow(false)}>
-                            POST NEW News
-                        </Link>
-                            </li>
-                            <li>
-                            <Link to={"/News/me"} onClick={() => setShow(false)}>
-                            VIEW YOUR News
-                        </Link>
-                            </li>
-                        </div>
-                    </li>
+                        <li className="dropbtn-3">
+                            News
+                            <div class="dropdown-content-3">
+                                <li>
+                                    <Link
+                                        to={"/News/getall"}
+                                        onClick={() => setShow(false)}
+                                    >
+                                        ALL News
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to={"/News/post"}
+                                        onClick={() => setShow(false)}
+                                    >
+                                        POST NEW News
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to={"/News/me"}
+                                        onClick={() => setShow(false)}
+                                    >
+                                        VIEW YOUR News
+                                    </Link>
+                                </li>
+                            </div>
+                        </li>
                     </div>
 
                     <button onClick={handleLogout}>LOGOUT</button>

@@ -33,7 +33,7 @@ const HeroSection = () => {
       <div className="heroSection">
         <div className="container">
           <div className="title">
-            <h1>Find a job that suits</h1>
+            <h1>Do a work that suits you </h1>
             <h1>your interests and skills</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
@@ -42,10 +42,10 @@ const HeroSection = () => {
             </p>
           </div>
           <div className="image">
-            <img src="./images/jobs.png" alt="hero" />
+            <img src="./images/jobs.jpg" alt="hero" />
           </div>
         </div>
-        <div className="details">
+        {/* <div className="details">
           {details.map((element) => {
             return (
               <div className="card" key={element.id}>
@@ -57,7 +57,7 @@ const HeroSection = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </>
   );

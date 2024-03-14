@@ -681,7 +681,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .jobDetail .container .banner p {
   font-weight: bold;
